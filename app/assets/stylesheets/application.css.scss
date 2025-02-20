@@ -142,6 +142,52 @@ b {
   color: var(--color-primary);
 }
 
+.flash_notice,
+.flash_alert {
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  line-height: 20px;
+  width: auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin:auto;
+  text-align: center;
+  max-width: fit-content;
+}
+
+.flash-message.hidden {
+  opacity: 0;
+  display: none;
+}
+
+.flash-message {
+  transition: transform 1s;
+}
+
+.flash-message.slide-up {
+  transform: translateY(-100%);
+}
+
+.flash_notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  
+}
+
+.flash_alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+}
+
+
 aside {
   height: 100vh;
 }
