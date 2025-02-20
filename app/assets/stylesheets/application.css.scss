@@ -68,9 +68,10 @@ body {
 .container {
   display: grid;
   width: 96%;
+  padding-bottom: 1rem;
   margin: 0 auto;
   gap: 1.8rem;
-  grid-template-columns: 14rem auto 23rem;
+  grid-template-columns: 14rem auto;
 }
 
 a {
@@ -282,9 +283,9 @@ aside .sidebar .message-count {
 }
 
 /*====================== MAIN ======================*/
-main {
-  margin-top: 1.4rem;
-}
+// main {
+//   // margin-top: 0.8rem;
+// }
 
 main .date {
   display: inline-block;
@@ -749,3 +750,5 @@ main .recent-orders a {
 
 
 // @import "bootstrap";
+@import "table";
+@import "modal";

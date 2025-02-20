@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+<div class="recent-orders">
+  <div class="table-header">
+    <h2>Contacts</h2>
+    <%= link_to new_contact_path, class: "new-user-btn" do %>
+      <span class="material-icons-sharp">add</span>
+    <% end %>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @contacts.each do |contact| %>
+        <%= render contact %> 
+      <% end %>
+    </tbody>
+  </table>
+</div>

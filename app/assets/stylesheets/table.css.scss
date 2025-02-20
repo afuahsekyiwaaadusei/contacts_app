@@ -1,0 +1,31 @@
+.table-header {
+    width: 185%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.new-user-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(36, 36, 243, 0.906);
+    color: #fff !important;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .new-user-btn:hover {
+    background-color: darkblue;
+  }
+  
+  .material-icons-sharp {
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  

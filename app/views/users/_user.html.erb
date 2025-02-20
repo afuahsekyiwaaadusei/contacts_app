@@ -1,57 +1,10 @@
-<div id="<%= dom_id user %>">
-  <p>
-    <strong>User code:</strong>
-    <%= user.user_code %>
-  </p>
-
-  <p>
-    <strong>First name:</strong>
-    <%= user.first_name %>
-  </p>
-
-  <p>
-    <strong>Last name:</strong>
-    <%= user.last_name %>
-  </p>
-
-  <p>
-    <strong>Username:</strong>
-    <%= user.username %>
-  </p>
-
-  <p>
-    <strong>Mobile number:</strong>
-    <%= user.mobile_number %>
-  </p>
-
-  <p>
-    <strong>Image path:</strong>
-    <%= user.image_path %>
-  </p>
-
-  <p>
-    <strong>First login:</strong>
-    <%= user.first_login %>
-  </p>
-
-  <p>
-    <strong>Active status:</strong>
-    <%= user.active_status %>
-  </p>
-
-  <p>
-    <strong>Del status:</strong>
-    <%= user.del_status %>
-  </p>
-
-  <p>
-    <strong>Creator:</strong>
-    <%= user.creator_id %>
-  </p>
-
-  <p>
-    <strong>Email:</strong>
-    <%= user.email %>
-  </p>
-
-</div>
+<tr>
+  <td><%= user.first_name %></td>
+  <td><%= user.last_name %></td>
+  <td><%= user.username %></td>
+  <td><%= user.mobile_number %></td>
+  <td><%= user.email %></td>
+  <td><%= user.active_status %></td>
+  <td><%= user.del_status %></td>
+  <td><%= link_to "View", user %></td>
+</tr>
