@@ -1,0 +1,41 @@
+.profile_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+
+}
+.profile {
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //text-align: center;
+}
+.profile p {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #000;
+}
+.profile_img {
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 100px; /* Adjust width */
+    height: 100px; /* Adjust height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the image stays within the border */
+}
+
+.profile_icon {
+    width: 50px; /* Adjust SVG width */
+    height: 50px; /* Adjust SVG height */
+}

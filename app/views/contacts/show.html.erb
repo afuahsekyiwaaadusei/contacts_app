@@ -1,6 +1,18 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @contact %>
+<div class="profile_container">
+  <div class="profile">
+    <div class="profile_img"><%= image_tag 'svgs/person', class: "profile_icon" %></div>
+    <p><span><%= @contact.first_name%></span> <span><%= @contact.last_name%></span></p>
+    <div>
+      <hr style="border: 2px solid black;">
+      <p>Phone Number: <%= @contact.phone_number%></p>
+      <p>Email: <%= @contact.email%></p>
+      <p>Created At: <%= @contact.created_at%></p>
+    </div>
+  </div>
+</div>
+
 
 <div>
   <%= link_to "Edit this contact", edit_contact_path(@contact) %> |

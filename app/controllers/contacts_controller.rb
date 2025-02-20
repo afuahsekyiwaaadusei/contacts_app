@@ -9,7 +9,6 @@ class ContactsController < ApplicationController
   # GET /contacts/1 or /contacts/1.json
   def show
     @contact = Contact.find(params[:id])
-    render partial: 'modal', locals: { contact: @contact }
   end
 
   # GET /contacts/new
