@@ -1,0 +1,20 @@
+<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+    <%= content_tag :div, class: "flash_#{name} flash-message", style: "margin: 0px 10px 10px auto; padding-block:5px; position:relative;", id: "flash_#{name}" do %>
+      <span><%= msg %></span>
+      <button type="button" class="close-btn" onclick="document.getElementById('flash_<%= name %>').style.display='none';" style="position:absolute; top:5px; right:10px; background:none; border:none; font-size:20px; cursor:pointer;">&times;</button>
+    <% end %>
+    <script>
+      setTimeout(function() {
+        var flashMessage = document.getElementById('flash_<%= name %>');
+        flashMessage.style.opacity = 0;
+        flashMessage.style.transition = 'opacity 1s';
+
+        setTimeout(function() {
+          flashMessage.style.display = 'none';
+        }, 1000);
+      }, 16000); 
+    </script>
+  <% end %>
+<% end %>
+

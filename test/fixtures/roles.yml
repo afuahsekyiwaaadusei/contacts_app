@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  role_code: MyString
+  role_type: MyString
+  active_status: false
+  del_status: false
+
+two:
+  name: MyString
+  role_code: MyString
+  role_type: MyString
+  active_status: false
+  del_status: false
